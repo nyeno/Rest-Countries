@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+input{
+    background-color: inherit;
+}
+
+@layer base {
+    body {
+      @apply  dark:bg-dark-bg bg-off-white text-light-text dark:text-white
+      
+    }
+  }
+
+
+
+ 
+
