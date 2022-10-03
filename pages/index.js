@@ -101,7 +101,7 @@ const Countries = ({ countries }) => {
       </div>
 
       {filteredData.length != 0 && searching && (
-        <div className="grid lg:grid-cols-4 gap-12 grid-cols-1">
+        <div className="grid lg:grid-cols-4 gap-10 grid-cols-1">
           {filteredData.map((country, key) => {
             return (
               <Link href={"/" + country.name.toLowerCase()} key={country.name}>
@@ -129,12 +129,12 @@ const Countries = ({ countries }) => {
       )}
 
       {!searching && (
-        <div className="grid lg:grid-cols-4 gap-12 grid-cols-1">
+        <div className="grid lg:grid-cols-4 gap-10 grid-cols-1">
           {filteredCountres.map((country, key) => {
             return (
               <Link href={"/" + country.name.toLowerCase()} key={country.name}>
                 <a className="bg-white dark:bg-dark-element rounded-xl lg:mb-0 pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="95%" height="75%" layout="responsive" alt="Countrty flag"/>
+                  <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="100%" height="75%" layout="responsive" alt="Countrty flag"/>
                   <h3 className="font-bold my-6 ml-6 text-lg">{ country.name }</h3>
 
                   <p className="ml-6 mb-2">
