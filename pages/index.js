@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Pagination from "../comps/Paginate";
 //import DropDown from "../comps/Dropdown";
 import Drop from "../comps/Drop";
+import Image from "next/image";
 
 
 export const getStaticProps = async () => {
@@ -104,7 +105,7 @@ export const getStaticProps = async () => {
             return (
                 <Link href={'/' + country.name.toLowerCase()} key={country.name} >
                 <a className="bg-white dark:bg-dark-element rounded-xl pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <img src={country.flags.png} className="rounded-t-xl h-3/6 w-full"/>
+                <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="100%" height="75%" layout="responsive"/>
                   <h3 className="font-bold my-4 ml-6 text-lg">{ country.name }</h3>
                   <p className="ml-6 mb-2">
                     <span className="font-semibold">Population: </span>
@@ -131,7 +132,7 @@ export const getStaticProps = async () => {
             return (
                 <Link href={'/' + country.name.toLowerCase()} key={country.name}>
                 <a className="bg-white dark:bg-dark-element rounded-xl lg:mb-0 pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
-                  <img src={country.flags.png} className="rounded-t-xl h-3/6 w-full"/>
+                  <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="100%" height="75%" layout="responsive"/>
                   <h3 className="font-bold my-6 ml-6 text-lg">{ country.name }</h3>
                   <p className="ml-6 mb-2">
                     <span className="font-semibold">Population: </span>

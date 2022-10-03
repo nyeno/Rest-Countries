@@ -21,6 +21,9 @@ module.exports = {
       padding: {
         '5vw': '15vw',
       },
+      minHeight: {
+        '1/2': '21rem'
+      },
       extend: {}
     }
   },
