@@ -84,6 +84,7 @@ const Details = ({ country }) => {
           <img
             src={country[0].flags.svg}
             className="rounded-xl lg:w-5/6 w-full shadow"
+            alt="Countrty flag"
           />
         </div>
         <div className="lg:grid lg:grid-cols-2">
