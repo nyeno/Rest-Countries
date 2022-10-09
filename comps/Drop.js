@@ -5,7 +5,7 @@ import CheckIcon from "@mui/icons-material/Check";
 
 export default function Drop({ selected, regions, setSelected }) {
   return (
-    <div className="mt-8 text-light-input w-8/12 lg:w-72 z-50 rounded-md">
+    <div className="mt-8 text-light-input w-8/12 z-50 lg:w-72 rounded-md">
       <Listbox by="id" value={selected} onChange={setSelected}>
         <div className="relative mt-1">
           <Listbox.Button className="relative w-full cursor-default rounded-lg dark:text-white dark:bg-dark-element py-4 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
