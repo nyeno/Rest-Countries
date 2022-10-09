@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
         ></link>
       </Head>
       <div>
-        <header className="flex justify-between z-100 lg:px-12 px-6 py-6 bg-white dark:bg-dark-element drop-shadow sticky top-0">
+        <header className="flex justify-between z-50 lg:px-12 px-6 py-6 bg-white dark:bg-dark-element drop-shadow sticky top-0">
           <h1 className="font-extrabold lg:text-2xl text-md">
             Where in the world?
           </h1>
