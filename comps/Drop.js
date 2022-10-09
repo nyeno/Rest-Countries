@@ -25,7 +25,7 @@ export default function Drop({ selected, regions, setSelected }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="absolute mt-1 1 bg-white dark:bg-dark-element max-h-60 w-full overflow-auto rounded-md py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+            <Listbox.Options className="absolute z-40 mt-1 1 bg-white dark:bg-dark-element max-h-60 w-full overflow-auto rounded-md py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
               {regions.map((region, regionIdx) => (
                 <Listbox.Option
                   key={regionIdx}
