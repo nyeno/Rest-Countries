@@ -105,7 +105,7 @@ const Countries = ({ countries }) => {
           {filteredData.map((country, key) => {
             return (
               <Link href={"/" + country.name.toLowerCase()} key={country.name}>
-                <a className="bg-white dark:bg-dark-element rounded-xl pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
+                <a className="bg-white dark:bg-dark-element z-0 rounded-xl pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
                   <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="100%" height="75%" layout="responsive" alt="Countrty flag"/>
                   <h3 className="font-bold my-4 ml-6 text-lg">{ country.name }</h3>
 
@@ -133,7 +133,7 @@ const Countries = ({ countries }) => {
           {filteredCountres.map((country, key) => {
             return (
               <Link href={"/" + country.name.toLowerCase()} key={country.name}>
-                <a className="bg-white dark:bg-dark-element rounded-xl lg:mb-0 pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
+                <a className="bg-white dark:bg-dark-element z-0 rounded-xl lg:mb-0 pb-8 shadow transition ease-in-out hover:-translate-y-1 hover:scale-105">
                   <Image src={country.flags.png} className="rounded-t-xl h-2/6 w-full" width="100%" height="75%" layout="responsive" alt="Countrty flag"/>
                   <h3 className="font-bold my-6 ml-6 text-lg">{ country.name }</h3>
 
